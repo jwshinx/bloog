@@ -20,4 +20,6 @@ ActiveRecord::Schema.define(:version => 20121209051038) do
     t.datetime "updated_at", :null => false
   end
 
+  add_index "posts", ["id"], :name => "index_posts_on_id", :unique => true
+
 end
